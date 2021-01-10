@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">وسيط</string>
+    <string name="home">Home</string>
+    <string name="order">Order</string>
+    <string name="account">Account</string>
+    <string name="menu">Menu</string>
+    <string name="title_activity_maps_order">Map</string>
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </array>
+</resources>

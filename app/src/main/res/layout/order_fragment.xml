@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/zaki"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Fragments.OrderFragment">
+<include layout="@layout/toolbar"/>
+        <LinearLayout
+            android:id="@+id/lNoItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgCart"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="No Order Yet"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnOrderNow"
+                    android:background="@drawable/background_circle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:paddingEnd="24dp"
+                    android:visibility="gone"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Your First Order"
+                    android:textSize="14sp"
+                    />
+        </LinearLayout>
+
+</RelativeLayout>

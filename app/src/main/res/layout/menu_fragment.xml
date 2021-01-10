@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/menumenuContainer"
+    android:orientation="vertical"
+    tools:context=".Fragments.MenuFragment">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:id="@+id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="8dp">
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_notifications"
+            />
+        <LinearLayout
+            android:id="@+id/llNotification"
+            android:layout_toEndOf="@id/ivNotification"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_alignBottom="@id/ivNotification"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="10dp"
+                android:text="Notification" />
+            <Switch
+                android:id="@+id/switchNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:checked="true"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center_vertical"
+                android:track="@drawable/custom_switch"
+                android:thumbTint="@android:color/white"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:id="@+id/icAbout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_about"
+                />
+            <LinearLayout
+                android:id="@+id/llNotification"
+                android:layout_toEndOf="@id/icAbout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_alignBottom="@id/icAbout"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="10dp"
+                    android:text="About" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:id="@+id/icLanguage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_translate"
+                />
+            <LinearLayout
+                android:id="@+id/llLanguage"
+                android:layout_toEndOf="@id/icLanguage"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_alignBottom="@id/icLanguage"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="10dp"
+                    android:text="Language" />
+                <Switch
+                    android:id="@+id/switchLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:checked="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:track="@drawable/custom_switch"
+                    android:thumbTint="@android:color/white"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:id="@+id/icShare"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_share"
+                />
+            <LinearLayout
+                android:id="@+id/llShare"
+                android:layout_toEndOf="@id/icShare"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_alignBottom="@id/icShare"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="10dp"
+                    android:text="Share" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+</LinearLayout>

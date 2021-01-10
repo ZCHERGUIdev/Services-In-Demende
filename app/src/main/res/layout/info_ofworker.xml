@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F5F5F1"
+        >
+        <TextView
+            android:id="@+id/editMaher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:hint="craft"
+            android:textStyle="bold"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/picImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/samiha"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:hint="Employer Name"
+            />
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:progressTint="#f9a825"
+            android:rating="2"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="cost :"
+                />
+            <TextView
+                android:id="@+id/costvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text=" 50da"
+                android:layout_marginTop="24dp"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="18dp"
+        android:background="#F5F5F1"
+        >
+        <TextView
+            android:id="@+id/editEmployeePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Phone number :"
+            />
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="37dp"
+            android:text="0792930900"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="18dp"
+            android:background="#F5F5F1"
+            >
+            <TextView
+                android:id="@+id/editWilaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Wilaya ,"
+                />
+            <TextView
+                android:id="@+id/wilayaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="87dp"
+                android:text="Mascara"
+                />
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="2"
+           android:orientation="horizontal">
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/background_circle"
+               android:backgroundTint="#127B95"
+               android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+               android:textColor="@color/blueDarker"
+               android:onClick="doEvnt"
+               android:text="REQUEST"
+               />
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/background_circle"
+               android:backgroundTint="@android:color/darker_gray"
+               android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+               android:textColor="@color/blueDarker"
+               android:onClick="doEvnt"
+               android:text="DESCARD"
+               />
+       </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
